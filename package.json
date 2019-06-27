@@ -1,0 +1,29 @@
+{
+  "name": "lsiten-nuxt-v2",
+  "version": "1.0.0",
+  "description": "今日打鸡蛋",
+  "author": "lsiten",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "@hapi/hapi": "^18.3.1",
+    "@nuxtjs/hapi": "^2.2.1",
+    "element-ui": "^2.4.11",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^24.1.0",
+    "jest": "^24.1.0",
+    "vue-jest": "^3.0.3",
+    "nodemon": "^1.18.9"
+  }
+}
