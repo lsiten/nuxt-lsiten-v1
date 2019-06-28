@@ -1,19 +1,14 @@
 <template>
   <div>
-    <l-header></l-header>
     <nuxt />
-    <l-footer></l-footer>
   </div>
 </template>
 
 <script>
-import lHeader from '../components/header'
-import lfooter from '../components/footer'
 export default {
-  name: 'default',
-  components: {
-    'l-header': lHeader,
-    'l-footer': lfooter
+  name: 'noHeader',
+  created () {
+    this.$store.dispatch('com_get_img_token', {})
   }
 }
 </script>
